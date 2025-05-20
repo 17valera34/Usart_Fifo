@@ -2,8 +2,8 @@
 #define __USART_H
 
 #include "avr/io.h"
-#define CMD_BUF_SIZE 10 // Buffer size for parsed command string
-#define RX_BUF_SIZE 10  // Circular RX buffer size
+#define CMD_BUF_SIZE 64 // Buffer size for parsed command string
+#define RX_BUF_SIZE 64  // Circular RX buffer size
 
 extern volatile unsigned char cmd_buf[CMD_BUF_SIZE];
 extern volatile uint8_t cmd_ready;
